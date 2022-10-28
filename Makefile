@@ -1,4 +1,4 @@
-obj-m += hello.o
+obj-m += info_module.o
 
 KDIR = /lib/modules/6.0.5/build
 
