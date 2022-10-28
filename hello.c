@@ -1,6 +1,7 @@
     #include <linux/init.h>
     #include <linux/module.h>
 
+    MODULE_LICENSE("GPL");
     static int hello_init(void){
         printk(KERN_ALERT "TEST: Hello world\n");
         return 0;
