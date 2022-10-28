@@ -1,9 +1,9 @@
 obj-m += hello.o
 
-KDIR = /usr/src/linux-headers-5.15.0-52
+KDIR = /lib/modules/6.0.5/build
 
 all:
-	$(MAKE) -C $(KDIR) SUBDIRS=$(PWD) modules
+	$(MAKE) -C $(KDIR) M=$(PWD) modules
 
 clean:
 	rm -rf *.o *.ko *.mod.* *.symvers *.order
