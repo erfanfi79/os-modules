@@ -2,13 +2,13 @@
     #include <linux/module.h>
 
     static int hello_init(void){
-        printk(KERN_ALERT "TEST: Hello world\n")
+        printk(KERN_ALERT "TEST: Hello world\n");
         return 0;
     }
 
     static void hello_exit(void){
-        printk(KERN_ALERT "TEST: GOOD Buy\n")
+        printk(KERN_ALERT "TEST: GOOD Buy\n");
     }
 
-    module_init(hello_init)
-    module_exit(hello_exit)
+    module_init(hello_init);
+    module_exit(hello_exit);
